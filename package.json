@@ -1,0 +1,31 @@
+{
+  "name": "api-fastify-swagger",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node .",
+    "lint": "eslint . --max-warnings 0",
+    "lint:fix": "eslint --fix . --max-warnings 0",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx}\" --cache",
+    "format:check": "prettier --check \"**/*.{js,jsx,ts,tsx,md,mdx}\" --cache",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.23.0",
+    "@types/node": "22.13.11",
+    "eslint": "9.23.0",
+    "eslint-config-prettier": "10.1.1",
+    "eslint-plugin-prettier": "5.2.3",
+    "globals": "16.0.0",
+    "husky": "9.1.7",
+    "prettier": "3.5.3",
+    "tsx": "4.19.3",
+    "typescript": "5.8.2",
+    "typescript-eslint": "8.27.0"
+  }
+}
